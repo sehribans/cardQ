@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartvizit</title>
+    <link rel="stylesheet"  href="index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+    <style>
+   
+        :root{
+            --primary-color: #db2222;
+            --secondary-color:#224e6f;
+        }
+    
+
+    </style>
+</head>
+
+<body>
+    <div class="conteiner">
+
+        <div class="cards">
+            <div class="card-conteiner">
+
+                <div class="card home-card">
+                    <div class="back">
+
+                        <div class="white-back">
+                            <div class="img-div">
+                                <img src="img/kapak.jpg">
+
+
+                            </div>
+                            <h2>Hande<span>YILMAZ</span></h2>
+                            <p>Senior/ Front-End Developer</p>
+                        </div>
+
+                    </div>
+                    <p class="rotate">Buraya Tıklayınız</p>
+                </div>
+                <div class="card back-card">
+                    <div class="back-violet">
+                        <div class="profil-div">
+                            <img src="img/profil.jpg">
+                        </div>
+                        <div class="white-back">
+                            <div class="contact-icons">
+                                <a href="tel:+123456789"> <i class="fa-sharp fa-solid fa-circle-phone"></i></a>
+                                <a href="mailto:email@ornek.com"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="https://wa.me/123456789"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                            <div class="head">
+                                <h2><span>Hi,</span> I'm</h2>
+                                <h2> Hande YILMAZ</h2>
+                                <p>I'm a Senior/Web Desinger in Bussiwap Software Company.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button-conteiner">
+
+                        <button class="rotate"><i class="fa-solid fa-rotate-left"></i></button>
+                        <button onclick="about()"><i class="fa-regular fa-circle-info"></i></button>
+                        <button onclick="social()"><i class="fa-regular fa-square-share-nodes"></i></button>
+                        <button onclick="company()"><i class="fa-regular fa-briefcase"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-menu card card-about">
+
+                <div class="white-back">
+                    <h3><i class="fa-regular fa-circle-info"></i></h3>
+                    <a href="#" class="row"><i class="fa-solid fa-phone"></i><span>0555 555 55 55</span></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-location-dot"></i><span>Yazır Mah, 09/7
+                            Selçuklu/KONYA</span></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i><span>sehriban@gmail.com</span></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-globe"></i></i><span>www.sehriban.com.tr</span></a>
+                    <a href="#"><i class="fa-solid fa-credit-card-front"></i><span>TR20056676767676</span></a>
+                </div>
+
+            </div>
+            <div class="card-menu card card-social">
+                <div class="white-back">
+                    <h3><i class="fa-regular fa-square-share-nodes"></i></h3>
+                    <a href="https://tr.linkedin.com/"><i
+                            class="fa-brands fa-linkedin"></i><span>https://tr.linkedin.com/</span></a>
+                    <a href="https://www.instagram.com/p/CnvQCB0qyL2/"><i class="fa-brands fa-instagram"></i><span>0850
+                            532 0413</span></a>
+                    <a href="https://tr-tr.facebook.com/"><i
+                            class="fa-brands fa-facebook"></i><span>faceboook</span></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i><span>twitter</span></a>
+                    <a href="https://github.com/"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+                    <a href="https://discord.com/"><i class="fa-brands fa-discord"></i><span>Discord</span></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i><span>You Tube</span></a>
+                </div>
+
+            </div>
+            <div class="card-menu card card-company">
+                <div class="white-back">
+                    <h3><i class="fa-regular fa-briefcase"></i></h3>
+                    <a href="#"><i class="fa-solid fa-building"></i><span>Busiwapp Dijital Medya & Yazılım</span></a>
+                    <a href="tel:+90850 532 0413"><i class="fa-solid fa-phone"></i><span>0850 532 0413</span></a>
+                    <a class="location"
+                        href="https://maps.google.com/?q=Ferhuniye, Darüsşifa Sk. Osiba Iş Merkezi D:9/103, 42100 Selçuklu/Konya"><i
+                            class="fa-sharp fa-solid fa-location-dot"></i><span>Ferhuniye, Osiba Iş Merkezi
+                            9/103,Selçuklu/Konya</span>
+                            <!-- <div id="map"></div></a> -->
+                    <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i><span>busiwapp@gmail.com</span></a>
+                    <a href="#"><i class="fa-sharp fa-solid fa-globe"></i></i><span>www.busiwapp.com.tr</span></a>
+                    <a href="#"><i class="fa-solid fa-credit-card-front"></i><span>TR20056676767676</span></a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+<script>
+    function about() {
+        $('.card-about').toggle({ effect: "scale", direction: "horizontal" });
+        $('.card-social').hide();
+        $('.card-company').hide()
+    }
+    function social() {
+        $('.card-social').toggle({ effect: "scale", direction: "horizontal" });
+        $('.card-about').hide();
+        $('.card-company').hide()
+        
+    }
+    function company() {
+        $('.card-company').toggle({ effect: "scale", direction: "horizontal" });
+        $('.card-social').hide();
+        $('.card-about').hide()
+       
+    }
+    
+    $(document).ready(function () {
+        $(".rotate").click(function () {
+            $(".card-conteiner").toggleClass("image-fade");
+            $('.card-social').hide();
+        $('.card-about').hide()
+        $('.card-company').hide()
+        });
+    });
+
+
+// Konumu tanımlayın (örneğin, Konya için)
+var sehirLocation = { lat: 37.8716, lng: 32.4846 };
+
+// Haritayı oluşturun ve belirtilen konuma yerleştirin
+function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: sehirLocation, // Konum
+        zoom: 12 // Yakınlaştırma düzeyi
+    });
+
+    // Konum işaretçisi ekleyin
+    var marker = new google.maps.Marker({
+        position: sehirLocation,
+        map: map,
+        title: 'Konya' // İşaretçi üzerine gelindiğinde görünen metin
+    });
+}
+
+
+</script>
