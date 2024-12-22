@@ -198,6 +198,7 @@
     padding: 4%;
 }
 .card-menu a:hover {
+    fill: var(--secondary-color) !important;
     color: var(--secondary-color);
     transform: translateY(-20%);
 }
@@ -218,8 +219,13 @@
 
 .card a i {
     margin-right: 0.5rem;
+   
 }
-
+.card a svg {
+    margin-right: 0.5rem;
+    font-size: 0.5rem;
+    fill: var(--primary-color) !important;
+}
 .card-menu h3 {
     font-size: 1.5rem;
 }
